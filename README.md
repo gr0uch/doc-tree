@@ -2,7 +2,7 @@
 
 Docchi parses comments in JavaScript code and outputs the structure and context of the comments in any particular format, JSDoc is the default. It traverses the Abstract Syntax Tree (AST) to determine the context of a comment.
 
-There is no reason for Docchi to exist (besides **working in ES6**). Basically it's glue code between the excellent (Acorn)[https://github.com/marijnh/acorn] parser, and the documentation parser (Doctrine)[https://github.com/Constellation/doctrine]. The initial motivation is to support ES6, and a modular approach to comment formatting. There's already (JSDoc)[https://github.com/jsdoc3/jsdoc] and (dox)[https://github.com/tj/dox], but I found these lacking for my needs.
+There is no reason for Docchi to exist (besides **working in ES6**). Basically it's glue code between the excellent [Acorn](https://github.com/marijnh/acorn) parser, and the documentation parser [Doctrine](https://github.com/Constellation/doctrine). The initial motivation is to support ES6, and a modular approach to comment formatting. There's already [JSDoc](https://github.com/jsdoc3/jsdoc) and [dox](https://github.com/tj/dox), but I found these lacking for my needs.
 
 ## Usage
 
@@ -62,4 +62,4 @@ There are a lot of AST nodes that it does not catch. Right now, it only supports
 
 ## Meta
 
-Docchi is licensed under the (GNU General Public License v3)[https://github.com/daliwali/docchi/blob/master/LICENSE].
+Docchi is licensed under the [GNU General Public License v3](https://github.com/daliwali/docchi/blob/master/LICENSE).
