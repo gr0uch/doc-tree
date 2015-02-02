@@ -22,6 +22,8 @@ var docs = new Docchi(fs.readFileSync('example.js'));
 var output = docs.output();
 ```
 
+The `output` method accepts 2 arguments, a function that accepts a comment and returns anything, and an `options` object to pass to the custom function or the built-in parser, Doctrine.
+
 ## Example
 
 This code documentation:
