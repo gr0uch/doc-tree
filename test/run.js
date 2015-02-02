@@ -3,7 +3,7 @@ import Docchi from '../lib/main';
 import fs from 'fs';
 import path from 'path';
 
-Test('Class documentation', (t) => {
+Test('Class documentation', t => {
   let docs = new Docchi(readFile('example1.js'));
   let output = docs.output();
 
@@ -18,7 +18,7 @@ Test('Class documentation', (t) => {
   t.end();
 });
 
-Test('Function prototype documentation', (t) => {
+Test('Function prototype documentation', t => {
   let docs = new Docchi(readFile('example2.js'));
   let output = docs.output();
 
