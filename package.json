@@ -13,7 +13,7 @@
     "url": "https://github.com/daliwali/docchi"
   },
   "scripts": {
-    "test": "node test | tnyan"
+    "test": "[ \"$CI\" = true ] && node test || node test | tnyan"
   },
   "dependencies": {
     "6to5": "^3.3.3",
