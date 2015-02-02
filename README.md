@@ -33,33 +33,27 @@ This code documentation:
  * This is a Foo class.
  */
 class Foo {
-	/**
-	 * This is the constructor.
-	 *
-	 * @param {Object} options
-	 */
-	constructor (options) { ... }
+    /**
+     * This is the constructor.
+     *
+     * @param {Object} options
+     */
+    constructor (options) { ... }
 }
 ```
 
 Gets outputted as:
 
 ```js
-[ { comment: { description: 'This is a Foo class.', tags: [] },
-    start: 0,
-    end: 31,
-    context: { start: 32, end: 148, name: 'Foo', path: 'Foo', type: 'class' }
-  },
-  { comment: { description: 'This is the constructor.', tags: [Object] },
-    start: 46,
-    end: 119,
-    context:
-     { start: 122,
-       end: 146,
-       name: 'constructor',
-       kind: '',
-       type: 'method',
-       path: 'Foo.constructor' } } ]
+[{ comment: { description: 'This is a Foo class.', tags: [] },
+   context: { location: { start: [Object], end: [Object] },
+              name: 'Foo', path: 'Foo', type: 'class' }
+ },
+ { comment: { description: 'This is the constructor.', tags: [Object] },
+   context: { location: { start: [Object], end: [Object] },
+              name: 'constructor', kind: '', type: 'method',
+              path: 'Foo.constructor' }
+}]
 ```
 
 There are a few limitations. It only considers block comments, and if the block comment starts with the character `!` it will be ignored. Also, only classes, class methods, functions, and `prototype` properties can be documented.
