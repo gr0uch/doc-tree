@@ -51,6 +51,7 @@ Gets outputted as:
        end: 146,
        name: 'constructor',
        kind: '',
+       type: 'method',
        path: 'Foo.constructor' } } ]
 ```
 
