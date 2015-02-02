@@ -1,5 +1,7 @@
 /**
  * This class defines a person.
+ *
+ * There is another paragraph, and supports **CommonMark**.
  */
 export default class Person extends Object {
 

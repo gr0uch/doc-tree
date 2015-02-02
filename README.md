@@ -30,7 +30,7 @@ This code documentation:
 
 ```js
 /**
- * This is a Foo class.
+ * This is a **Foo** class.
  */
 class Foo {
     /**
@@ -45,11 +45,11 @@ class Foo {
 Gets outputted as:
 
 ```js
-[{ comment: { description: 'This is a Foo class.', tags: [] },
+[{ comment: { description: '<p>This is a <strong>Foo</strong> class.</p>', tags: [] },
    context: { location: { start: [Object], end: [Object] },
               name: 'Foo', path: 'Foo', type: 'class' }
  },
- { comment: { description: 'This is the constructor.', tags: [Object] },
+ { comment: { description: '<p>This is the constructor.</p>', tags: [Object] },
    context: { location: { start: [Object], end: [Object] },
               name: 'constructor', kind: '', type: 'method',
               path: 'Foo.constructor' }
