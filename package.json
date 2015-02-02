@@ -1,0 +1,41 @@
+{
+  "name": "docchi",
+  "description": "Documentation generating tool for JavaScript.",
+  "version": "0.0.1",
+  "license": "GPLv3",
+  "author": {
+    "name": "Dali Zheng",
+    "email": "d@liwa.li"
+  },
+  "homepage": "https://github.com/daliwali/docchi",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/daliwali/docchi"
+  },
+  "scripts": {
+    "test": "node test | tnyan"
+  },
+  "dependencies": {
+    "6to5": "^3.3.3",
+    "acorn": "^0.11.0",
+    "doctrine": "^0.6.2"
+  },
+  "devDependencies": {
+    "tap-nyan": "0.0.2",
+    "tape": "^3.5.0"
+  },
+  "engines": {
+    "node": ">=0.10"
+  },
+  "keywords": [
+    "doc",
+    "docs",
+    "generator",
+    "tool",
+    "jsdoc",
+    "document",
+    "comment",
+    "json",
+    "documentation"
+  ]
+}
