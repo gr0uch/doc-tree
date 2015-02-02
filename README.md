@@ -45,13 +45,12 @@ class Foo {
 Gets outputted as:
 
 ```js
-[ { type: 'block',
-    comment: { description: 'This is a Foo class.', tags: [] },
+[ { comment: { description: 'This is a Foo class.', tags: [] },
     start: 0,
     end: 31,
-    context: { start: 32, end: 148, name: 'Foo', path: 'Foo', type: 'class' } },
-  { type: 'block',
-    comment: { description: 'This is the constructor.', tags: [Object] },
+    context: { start: 32, end: 148, name: 'Foo', path: 'Foo', type: 'class' }
+  },
+  { comment: { description: 'This is the constructor.', tags: [Object] },
     start: 46,
     end: 119,
     context:
