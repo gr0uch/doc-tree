@@ -14,6 +14,7 @@ $ npm install --save docchi
 
 ```js
 import fs from 'fs';
+import Docchi from 'docchi';
 
 // Constructor takes a string or a buffer.
 var docs = new Docchi(fs.readFileSync('example.js'));
@@ -55,6 +56,8 @@ Gets outputted as:
               path: 'Foo.constructor' }
 }]
 ```
+
+Descriptions are rendered into HTML using CommonMark. Use `{ render: false }` in the options for `output` to turn it off.
 
 There are a few limitations. It only considers block comments, and if the block comment starts with the character `!` it will be ignored. Also, only classes, class methods, functions, and `prototype` properties can be documented.
 
