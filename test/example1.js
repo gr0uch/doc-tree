@@ -35,6 +35,12 @@ export default class Person extends Object {
     [this.firstName, this.lastName] = name.split(' ');
   }
 
+  /*!
+   * This should be ignored.
+   */
+  // This should also be ignored.
+  ignore () {}
+
   /**
    * This is a method.
    */
