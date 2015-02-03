@@ -1,7 +1,7 @@
 {
   "name": "docchi",
   "description": "Documentation generating tool for JavaScript.",
-  "version": "0.0.5",
+  "version": "0.0.6",
   "license": "GPLv3",
   "author": {
     "name": "Dali Zheng",
@@ -13,16 +13,16 @@
     "url": "https://github.com/daliwali/docchi"
   },
   "scripts": {
-    "test": "[ \"$CI\" = true ] && node test || node test | tnyan"
+    "test": "[ \"$CI\" = true ] && node test || node test | tap-spec"
   },
   "dependencies": {
-    "6to5": "^3.3.3",
+    "6to5": "^3.3.4",
     "acorn": "^0.11.0",
     "commonmark": "^0.17.1",
     "doctrine": "^0.6.2"
   },
   "devDependencies": {
-    "tap-nyan": "0.0.2",
+    "tap-spec": "^2.2.0",
     "tape": "^3.5.0"
   },
   "engines": {
