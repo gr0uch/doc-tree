@@ -1,5 +1,5 @@
 import Test from 'tape';
-import Docchi from '../lib/main';
+import Docchi from '../lib';
 import fs from 'fs';
 import path from 'path';
 

@@ -7,10 +7,18 @@ There is no reason for Docchi to exist (besides **working in ES6**). Basically i
 Get it from `npm`:
 
 ```sh
-$ npm install --save docchi
+$ npm install -g docchi
 ```
 
 ## Usage
+
+Docchi operates over `stdio`. Running Docchi on its own source code, and outputting the result to `docs.json`:
+
+```sh
+$ docchi < lib/index.js > docs.json
+```
+
+Or you could use it programmatically, as part of a Node-based build script:
 
 ```js
 import fs from 'fs';
@@ -63,7 +71,7 @@ There are a few limitations. It only considers block comments, and if the block 
 
 ## Contributions
 
-There are a lot of AST nodes that it does not catch. Right now, it only supports commenting classes, class methods, functions, and prototypes. Nested prototype objects will not work. Also, it does not yet work over `stdio`, that would be a nice feature to have. Pull requests welcome.
+There are a lot of AST nodes that it does not catch. Right now, it only supports commenting class declarations, class methods, functions, and prototype properties, which is its primary use case. Pull requests welcome.
 
 ## Meta
 

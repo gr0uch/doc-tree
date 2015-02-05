@@ -33,3 +33,8 @@ Person.prototype.die = function () {
  * Hmm.
  */
 Person.prototype.sex = 'female';
+
+/**
+ * Property on Person. This shouldn't work.
+ */
+Person.taxonomy = 'homo sapien';

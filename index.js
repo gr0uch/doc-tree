@@ -1,3 +1,3 @@
 require('6to5/register');
 
-module.exports = require('./lib/main');
+module.exports = require('./lib');
