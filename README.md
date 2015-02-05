@@ -7,7 +7,7 @@ There is no reason for Docchi to exist (besides **working in ES6**). Basically i
 Get it from `npm`:
 
 ```sh
-$ npm install -g docchi
+$ sudo npm install -g docchi
 ```
 
 ## Usage
