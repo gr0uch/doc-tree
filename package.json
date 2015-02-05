@@ -1,7 +1,7 @@
 {
   "name": "docchi",
   "description": "Documentation generating tool for JavaScript.",
-  "version": "0.1.2",
+  "version": "0.1.3",
   "license": "GPLv3",
   "author": {
     "name": "Dali Zheng",
