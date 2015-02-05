@@ -1,4 +1,4 @@
 #!/usr/bin/env node
 
-require("6to5/polyfill");
+require("core-js");
 require('../dist/cli');
