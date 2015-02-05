@@ -1,4 +1,4 @@
 #!/usr/bin/env node
 
-require("core-js");
+require("core-js/shim");
 require('../dist/cli');
