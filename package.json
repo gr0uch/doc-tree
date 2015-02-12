@@ -1,7 +1,7 @@
 {
   "name": "docchi",
   "description": "Documentation generating tool for JavaScript.",
-  "version": "0.1.13",
+  "version": "0.1.14",
   "license": "GPLv3",
   "author": {
     "name": "Dali Zheng",
@@ -27,6 +27,13 @@
     "tap-spec": "^2.2.1",
     "tape": "^3.5.0"
   },
+  "files": [
+    "bin/",
+    "dist/",
+    "README.md",
+    "index.js",
+    "LICENSE"
+  ],
   "bin": {
     "docchi": "bin/docchi.js"
   },
