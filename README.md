@@ -25,10 +25,10 @@ import fs from 'fs';
 import Docchi from 'docchi';
 
 // Constructor takes a string or a buffer.
-var docs = new Docchi(fs.readFileSync('example.js'));
+let docs = new Docchi(fs.readFileSync('example.js'));
 
 // An array of parsed comments matched with its context.
-var output = docs.output();
+let output = docs.output();
 ```
 
 The `output` method accepts 2 arguments, a function that accepts a comment and returns anything, and an `options` object to pass to the custom function or the built-in parser, Doctrine.
@@ -67,7 +67,7 @@ Gets outputted as:
 
 Descriptions are rendered into HTML using CommonMark. Use `{ render: false }` in the options for `output` to turn it off.
 
-There are a few limitations. It only considers block comments, and if the block comment starts with the character `!` it will be ignored. Also, only classes, class methods, functions, and `prototype` properties can be documented.
+There are a few limitations. The JSDoc parser will only consider block comments that start with `/**`, and block comments starting with the character `!` are explicitly ignored. Also, only classes, class methods, functions, and `prototype` properties can be documented.
 
 ## Contributions
 
