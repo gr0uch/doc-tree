@@ -1,7 +1,7 @@
 {
   "name": "docchi",
   "description": "Documentation generating tool for JavaScript.",
-  "version": "0.2.0",
+  "version": "0.2.1",
   "license": "GPLv3",
   "author": {
     "name": "Dali Zheng",
@@ -13,17 +13,17 @@
     "url": "https://github.com/daliwali/docchi"
   },
   "scripts": {
-    "test": "6to5-node test | tap-spec",
-    "prepublish": "6to5 lib --out-dir dist"
+    "test": "babel-node test | tap-spec",
+    "prepublish": "babel lib --out-dir dist"
   },
   "dependencies": {
     "acorn": "^0.11.0",
     "commonmark": "^0.17.1",
-    "core-js": "^0.5.2",
+    "core-js": "^0.5.4",
     "doctrine": "^0.6.2"
   },
   "devDependencies": {
-    "6to5": "^3.6.0",
+    "babel": "^4.0.1",
     "tap-spec": "^2.2.1",
     "tape": "^3.5.0"
   },
