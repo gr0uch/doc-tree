@@ -73,6 +73,6 @@ There are a few limitations. The JSDoc parser will only consider block comments 
 
 There are a lot of AST nodes that it does not catch. Right now, it only supports commenting class declarations, class methods, functions, and prototype properties, which is its primary use case. Pull requests welcome.
 
-## Meta
+## License
 
 Docchi is licensed under the [GNU General Public License v3](https://github.com/daliwali/docchi/blob/master/LICENSE).
