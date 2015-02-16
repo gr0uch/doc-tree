@@ -60,7 +60,7 @@ Gets outputted as:
  },
  { comment: { description: '<p>This is the constructor.</p>', tags: [Object] },
    context: { location: { start: [Object], end: [Object] },
-              name: 'constructor', kind: '', type: 'method',
+              name: 'constructor', type: 'method',
               path: 'Foo.constructor' }
 }]
 ```
