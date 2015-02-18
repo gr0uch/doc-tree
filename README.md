@@ -67,7 +67,7 @@ Gets outputted as:
 
 Descriptions are rendered into HTML using CommonMark. Use `{ render: false }` in the options for `output` to turn it off.
 
-There are a few limitations. The JSDoc parser will only consider block comments that start with `/**`, and block comments starting with the character `!` are explicitly ignored. Also, only classes, class methods, functions, and `prototype` properties can be documented.
+There are a few limitations. All comments may only be matched to code that is immediately on the next line (no line-break or 2 line-breaks are not allowed). The default JSDoc parser will only consider block comments that start with `/**`. Also, only classes, class methods, functions, and `prototype` properties can be documented.
 
 ## Contributions
 
