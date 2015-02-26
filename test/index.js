@@ -1,10 +1,10 @@
 import Test from 'tape';
 import fs from 'fs';
 import path from 'path';
-import Docchi from '../dist';
+import Docchi from '../lib';
 
 Test('Class documentation', t => {
-  let docs = new Docchi(readFile('example1.js'));
+  let docs = new Docchi(readFile('examples/example1.js'));
   let output = docs.output();
 
   t.equal(output.length, 5, 'Docs match up to corresponding nodes.');
@@ -19,7 +19,7 @@ Test('Class documentation', t => {
 });
 
 Test('Function prototype documentation', t => {
-  let docs = new Docchi(readFile('example2.js'));
+  let docs = new Docchi(readFile('examples/example2.js'));
   let output = docs.output();
 
   t.equal(output.length, 5, 'Docs match up to corresponding nodes.');

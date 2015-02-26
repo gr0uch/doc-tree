@@ -1,5 +1,10 @@
 # Changelog
 
+**v0.3.5** (2015-02-26)
+* Use `make`, run tests on compiled library.
+* Fix fatal error due to transpilation.
+* Bump package versions.
+
 **v0.3.3** (2015-02-21)
 - Upgrade babel to `4.4.3`.
 - Use `babel-runtime` and include it as a dependency.

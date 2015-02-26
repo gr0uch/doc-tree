@@ -1,7 +1,7 @@
 {
   "name": "docchi",
   "description": "Documentation generating tool for JavaScript.",
-  "version": "0.3.4",
+  "version": "0.3.5",
   "license": "GPLv3",
   "author": {
     "name": "Dali Zheng",
@@ -12,11 +12,10 @@
     "type": "git",
     "url": "https://github.com/daliwali/docchi"
   },
-  "main": "dist/index.js",
+  "main": "dist/lib/index.js",
   "scripts": {
-    "test": "npm run make && babel-node test | tap-dot",
-    "make": "babel --optional runtime lib --out-dir dist",
-    "prepublish": "npm run make"
+    "test": "make && node dist/test | tap-dot",
+    "prepublish": "make clean && make compile-lib"
   },
   "dependencies": {
     "acorn": "^0.11.0",
