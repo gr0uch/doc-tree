@@ -1,7 +1,7 @@
 import Test from 'tape';
-import Docchi from '../lib';
 import fs from 'fs';
 import path from 'path';
+import Docchi from '../dist';
 
 Test('Class documentation', t => {
   let docs = new Docchi(readFile('example1.js'));
