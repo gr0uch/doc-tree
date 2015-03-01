@@ -1,5 +1,8 @@
 # Changelog
 
+**v0.3.6** (2015-03-01)
+* Bump package versions.
+
 **v0.3.5** (2015-02-26)
 * Use `make`, run tests on compiled library.
 * Fix fatal error due to transpilation.

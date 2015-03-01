@@ -6,6 +6,8 @@ LIB_DIR = lib/
 DIST_DIR = dist/
 TEST_DIR = test/
 
+.PHONY: all compile-lib compile-test clean
+
 all: compile-lib compile-test
 
 compile-lib:
