@@ -1,5 +1,9 @@
 # Changelog
 
+**v0.3.7** (2015-03-02)
+* Fix path to CLI. Thanks @emmenko!
+* Bump package versions.
+
 **v0.3.6** (2015-03-01)
 * Bump package versions.
 
