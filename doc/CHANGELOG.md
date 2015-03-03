@@ -1,6 +1,7 @@
 # Changelog
 
-**v0.3.7** (2015-03-02)
+**v0.3.8** (2015-03-02)
+* Use ESLint.
 * Fix path to CLI. Thanks @emmenko!
 * Bump package versions.
 
