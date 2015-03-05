@@ -7,7 +7,7 @@ LIB_DIR = lib/
 DIST_DIR = dist/
 TEST_DIR = test/
 
-.PHONY: all compile-lib compile-test clean
+.PHONY: all compile-lib compile-test clean lint
 
 all: compile-lib compile-test
 
@@ -21,7 +21,7 @@ compile-lib:
 
 compile-test:
 	mkdir -p $(DIST_DIR)$(TEST_DIR)
-	cp -r $(TEST_DIR)examples/ $(DIST_DIR)$(TEST_DIR)examples/
+	cp -rf $(TEST_DIR)examples/ $(DIST_DIR)$(TEST_DIR)
 	$(COMPILE_CMD) --optional runtime $(TEST_DIR)index.js \
 		--out-file $(DIST_DIR)$(TEST_DIR)index.js
 

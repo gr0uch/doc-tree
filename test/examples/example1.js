@@ -48,11 +48,17 @@ export default class Person extends Object {
     throw new Error('Diarrhea!');
   }
 
+  /**
+   * This is a static method.
+   */
+  static zap () {}
+
 }
 
+
 /**
- * WTF. This sort of prototype assignment won't be detected.
- * Too complex to handle for now.
+ * This sort of prototype assignment won't be detected, need
+ * good static analysis to do this. Too complex to handle for now.
  */
 Object.assign(Person.prototype, {
   alive: true

@@ -1,5 +1,10 @@
 # Changelog
 
+**v0.4.0** (2015-03-05)
+* Removed `path` since it may be misleading, replaced with `target`.
+* Document object properties and static methods.
+* Allow same line comment.
+
 **v0.3.8** (2015-03-02)
 * Use ESLint.
 * Fix path to CLI. Thanks @emmenko!

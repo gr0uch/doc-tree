@@ -56,22 +56,21 @@ Gets outputted as:
 ```js
 [{ comment: { description: '<p>This is a <strong>Foo</strong> class.</p>', tags: [] },
    context: { location: { start: [Object], end: [Object] },
-              name: 'Foo', path: 'Foo', type: 'class' }
+              name: 'Foo', type: 'class' }
  },
  { comment: { description: '<p>This is the constructor.</p>', tags: [Object] },
    context: { location: { start: [Object], end: [Object] },
-              name: 'constructor', type: 'method',
-              path: 'Foo.constructor' }
+              name: 'constructor', type: 'method', target: 'Foo' }
 }]
 ```
 
 Descriptions are rendered into HTML using CommonMark. Use `{ render: false }` in the options for `output` to turn it off.
 
-There are a few limitations. All comments may only be matched to code that is immediately on the next line (no line-break or 2 line-breaks are not allowed). The default JSDoc parser will only consider block comments that start with `/**`. Also, only classes, class methods, functions, and `prototype` properties can be documented.
+There are a few limitations. All comments may only be matched to code that is immediately proceeding on the same or next line (more than one line-break is not allowed). The default JSDoc parser will only consider block comments that start with `/**`.
 
-## Contributions
+## Contributing
 
-There are a lot of AST nodes that it does not catch. Right now, it only supports commenting class declarations, class methods, functions, and prototype properties, which is its primary use case. Pull requests welcome.
+There are a lot of AST nodes that it does not catch. Right now, it only supports commenting class declarations, class methods (including getter/setter/static), functions, prototype properties, and object properties, which is its primary use case. Pull requests welcome.
 
 ## License
 
