@@ -1,4 +1,4 @@
-# Docchi [![Build Status](https://travis-ci.org/daliwali/docchi.png?branch=master)](https://travis-ci.org/daliwali/docchi)
+# Docchi [![Build Status](https://img.shields.io/travis/daliwali/docchi.svg)](https://travis-ci.org/daliwali/docchi)
 
 Docchi parses comments in JavaScript code and outputs the structure and context of the comments in any particular format, JSDoc is the default. It traverses the Abstract Syntax Tree (AST) to determine the context of a comment.
 
