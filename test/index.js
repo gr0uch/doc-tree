@@ -4,7 +4,7 @@ import path from 'path';
 import Docchi from '../lib';
 
 Test('Class documentation', t => {
-  let doc = new Docchi(readFile('examples/example1.js'));
+  let doc = new Docchi(readFile('fixtures/fixture1.js'));
   let output = doc.output();
 
   t.equal(output.length, 6, 'Docs match up to corresponding nodes.');
@@ -21,7 +21,7 @@ Test('Class documentation', t => {
 });
 
 Test('Function prototype documentation', t => {
-  let doc = new Docchi(readFile('examples/example2.js'));
+  let doc = new Docchi(readFile('fixtures/fixture2.js'));
   let output = doc.output();
 
   t.equal(output.length, 6, 'Docs match up to corresponding nodes.');
