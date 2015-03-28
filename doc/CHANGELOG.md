@@ -1,5 +1,9 @@
 # Changelog
 
+**v0.5.0** (2015-03-27)
+* Upgrade packages.
+* Refactor AST traversal.
+
 **v0.4.0** (2015-03-05)
 * Removed `path` since it may be misleading, replaced with `target`.
 * Document object properties and static methods.

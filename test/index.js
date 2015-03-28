@@ -7,7 +7,7 @@ Test('Class documentation', t => {
   let doc = new Docchi(readFile('fixtures/fixture1.js'));
   let output = doc.output();
 
-  t.equal(output.length, 6, 'Docs match up to corresponding nodes.');
+  t.equal(output.length, 7, 'Docs match up to corresponding nodes.');
   t.equal(output[0].comment.description.match(/<p>/g).length, 2,
     'CommonMark is supported.');
   t.equal(output[0].context.type, 'class', 'Class is a class.');
@@ -17,6 +17,7 @@ Test('Class documentation', t => {
   t.equal(output[5].context.target, 'Person', 'Static target is correct.');
   t.equal(output[5].context.static, true, 'Static attribute is correct.');
   t.equal(output[5].context.type, 'method', 'Static method is correct.');
+  t.equal(output[6].context.type, 'class', 'Class is a class.');
   t.end();
 });
 
