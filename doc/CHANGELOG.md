@@ -1,5 +1,8 @@
 # Changelog
 
+**v0.5.2** (2015-03-29)
+* Collapse contiguous single-line comments as one comment.
+
 **v0.5.1** (2015-03-29)
 * Include comments in the output that are not matched to a node.
 * Remove restriction on line distance.

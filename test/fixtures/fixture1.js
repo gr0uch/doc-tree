@@ -39,6 +39,8 @@ export default class Person extends Object {
    * This should be ignored.
    */
   // This should also be ignored.
+  // Ignore this line too.
+  // Nothing here.
   ignore () {}
 
   /**
