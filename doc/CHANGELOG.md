@@ -1,5 +1,9 @@
 # Changelog
 
+**v0.5.1** (2015-03-29)
+* Include comments in the output that are not matched to a node.
+* Remove restriction on line distance.
+
 **v0.5.0** (2015-03-27)
 * Upgrade packages.
 * Refactor AST traversal.

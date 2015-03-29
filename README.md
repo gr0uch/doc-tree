@@ -10,6 +10,7 @@ Get it from `npm`:
 $ sudo npm install -g docchi
 ```
 
+
 ## Usage
 
 Docchi operates over `stdio`. Running Docchi on its own source code, and outputting the result to `docs.json`:
@@ -32,6 +33,7 @@ let output = docs.output();
 ```
 
 The `output` method accepts 2 arguments, a function that accepts a comment and returns anything, and an `options` object to pass to the custom function or the built-in parser, Doctrine.
+
 
 ## Example
 
@@ -66,11 +68,13 @@ Gets outputted as:
 
 Descriptions are rendered into HTML using CommonMark. Use `{ render: false }` in the options for `output` to turn it off.
 
-There are a few limitations. All comments may only be matched to code that is immediately proceeding on the same or next line (more than one line-break is not allowed). The default JSDoc parser will only consider block comments that start with `/**`.
+The default JSDoc parser will only consider block comments that start with `/**`.
+
 
 ## Contributing
 
 There are a lot of AST nodes that it does not catch. Right now, it only supports commenting class declarations, class methods (including getter/setter/static), functions, prototype properties, and object properties, which is its primary use case. Pull requests welcome.
+
 
 ## License
 

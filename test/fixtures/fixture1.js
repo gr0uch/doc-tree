@@ -49,6 +49,9 @@ export default class Person extends Object {
   }
 
   /**
+   * This comment should not be matched to a node.
+   */
+  /**
    * This is a static method.
    */
   static zap () {}
