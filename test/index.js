@@ -27,17 +27,21 @@ Test('Function prototype documentation', t => {
   let doc = new Docchi(readFile('fixtures/fixture2.js'));
   let output = doc.output();
 
-  t.equal(output.length, 6, 'docs match up to corresponding nodes');
+  t.equal(output.length, 8, 'docs match up to corresponding nodes');
   t.equal(output[0].context.type, 'class', 'class is a class');
-  t.equal(output[1].context.target, 'Person', 'method target is correct');
-  t.equal(output[2].context.target, 'Person', 'property target is correct');
-  t.equal(output[2].context.type, 'property', 'property is a property');
-  t.equal(output[3].context.target, 'Person', 'method target is correct');
-  t.equal(output[4].context.target, 'Person', 'property target is correct');
+  t.equal(output[1].context.type, 'property', 'property is a property');
+  t.equal(output[1].context.static, undefined, 'prototype not static');
+  t.equal(output[2].context.target, 'Person', 'method target is correct');
+  t.equal(output[3].context.target, 'Person', 'property target is correct');
+  t.equal(output[3].context.type, 'property', 'property is a property');
   t.equal(output[4].context.type, 'property', 'property is a property');
-  t.equal(output[5].context.target, 'Person', 'static property target is correct');
-  t.equal(output[5].context.static, true, 'static property is static');
-  t.equal(output[5].context.type, 'property', 'static property is property');
+  t.equal(output[4].context.static, true, 'static property is static');
+  t.equal(output[5].context.target, 'Person', 'method target is correct');
+  t.equal(output[6].context.target, 'Person', 'property target is correct');
+  t.equal(output[6].context.type, 'property', 'property is a property');
+  t.equal(output[7].context.target, 'Person', 'static property target is correct');
+  t.equal(output[7].context.static, true, 'static property is static');
+  t.equal(output[7].context.type, 'property', 'static property is property');
   t.end();
 });
 

@@ -1,11 +1,14 @@
 /**
- * Old school prototypes.
+ * Person constructor.
  */
 export default function Person (firstName, lastName, age = 0) {
   [this.firstName, this.lastName, this.age] =
     [firstName, lastName, age];
 }
 
+/**
+ * Typical person.
+ */
 Person.prototype = {
 
   /**
@@ -20,6 +23,13 @@ Person.prototype = {
    */
   foo: 123
 
+};
+
+Person.thing = {
+  /**
+   * Foobar!
+   */
+  value: 'foobar'
 };
 
 /**
