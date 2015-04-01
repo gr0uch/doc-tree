@@ -64,7 +64,12 @@ export default class Person extends Object {
 /**
  * Nothing here.
  */
-export class Nothing {}
+export class Nothing {
+  /**
+   * Empty.
+   */
+  static void () {}
+}
 
 
 /**
@@ -74,3 +79,14 @@ export class Nothing {}
 Object.assign(Person.prototype, {
   alive: true
 });
+
+
+/**
+ * If you use anonymous classes, your methods won't get a target.
+ */
+let Shit = class {
+  /**
+   * Your shit won't get a target, because your class is nameless.
+   */
+  poop () {}
+};

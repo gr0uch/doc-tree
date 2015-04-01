@@ -2,8 +2,7 @@
  * Person constructor.
  */
 export default function Person (firstName, lastName, age = 0) {
-  [this.firstName, this.lastName, this.age] =
-    [firstName, lastName, age];
+  [this.firstName, this.lastName, this.age] = [...arguments];
 }
 
 /**
@@ -25,6 +24,9 @@ Person.prototype = {
 
 };
 
+/**
+ * Thing.
+ */
 Person.thing = {
   /**
    * Foobar!

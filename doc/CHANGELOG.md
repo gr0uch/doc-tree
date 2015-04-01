@@ -1,5 +1,9 @@
 # Changelog
 
+**v0.6.0** (2015-04-01)
+* Fix target for object assignment.
+* Fix type for class method definitions.
+
 **v0.5.3** (2015-03-29)
 * Match more AST nodes.
 * Collapse contiguous single-line comments as one comment.
