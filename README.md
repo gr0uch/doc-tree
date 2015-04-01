@@ -23,10 +23,10 @@ Or you could use it programmatically, as part of a Node-based build script:
 
 ```js
 import fs from 'fs';
-import Docchi from 'docchi';
+import docchi from 'docchi';
 
-// Constructor takes a string or a buffer.
-let docs = new Docchi(fs.readFileSync('example.js'));
+// Parse a string or a buffer.
+let docs = docchi.parse(fs.readFileSync('example.js'));
 
 // An array of parsed comments matched with its context.
 let output = docs.output();

@@ -4,7 +4,7 @@ import readFile from './read_file';
 
 
 Test('Class documentation', t => {
-  let doc = new Docchi(readFile('fixtures/fixture3.js'));
+  let doc = Docchi.parse(readFile('fixtures/fixture3.js'));
   let output = doc.output();
 
   t.equal(output.length, 7, 'Docs match up to corresponding nodes.');
