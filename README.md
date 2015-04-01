@@ -73,7 +73,7 @@ The default JSDoc parser will only consider block comments that start with `/**`
 
 ## Contributing
 
-There are a lot of AST nodes that it does not catch. Right now, it only supports commenting class declarations, class methods (including getter/setter/static), functions, prototype properties, and object properties, which is its primary use case. Pull requests welcome.
+There are a lot of AST nodes that it does not match yet. Pull requests welcome.
 
 
 ## License

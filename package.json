@@ -1,7 +1,7 @@
 {
   "name": "docchi",
   "description": "Documentation generating tool for JavaScript.",
-  "version": "0.6.1",
+  "version": "0.7.0",
   "license": "GPLv3",
   "author": {
     "name": "Dali Zheng",
@@ -14,7 +14,7 @@
   },
   "main": "dist/lib/index.js",
   "scripts": {
-    "test": "make && node dist/test",
+    "test": "make && node dist/test | tap-dot",
     "prepublish": "make clean && make compile-lib"
   },
   "dependencies": {

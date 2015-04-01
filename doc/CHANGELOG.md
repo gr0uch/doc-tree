@@ -1,5 +1,8 @@
 # Changelog
 
+**v0.7.0** (2015-04-01)
+* Add support for variable assignment.
+
 **v0.6.1** (2015-04-01)
 * Fix target for object assignment.
 * Fix type for class method definitions.
