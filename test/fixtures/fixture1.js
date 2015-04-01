@@ -86,7 +86,7 @@ Object.assign(Person.prototype, {
  */
 let Shit = class {
   /**
-   * Your shit won't get a target, because your class is nameless.
+   * Your method won't get a target, because your class is nameless.
    */
   poop () {}
 };

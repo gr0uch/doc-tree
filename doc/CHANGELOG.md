@@ -1,6 +1,6 @@
 # Changelog
 
-**v0.6.0** (2015-04-01)
+**v0.6.1** (2015-04-01)
 * Fix target for object assignment.
 * Fix type for class method definitions.
 
