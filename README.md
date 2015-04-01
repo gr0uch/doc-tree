@@ -26,10 +26,10 @@ import fs from 'fs';
 import docchi from 'docchi';
 
 // Parse a string or a buffer.
-let docs = docchi.parse(fs.readFileSync('example.js'));
+let doc = docchi.parse(fs.readFileSync('example.js'));
 
-// An array of parsed comments matched with its context.
-let output = docs.output();
+// An array of parsed comments matched with their contexts.
+let output = doc.output();
 ```
 
 The `output` method accepts 2 arguments, a function that accepts a comment and returns anything, and an `options` object to pass to the custom function or the built-in parser, Doctrine.
