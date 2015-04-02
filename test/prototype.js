@@ -7,7 +7,8 @@ Test('Function prototype documentation', t => {
   let doc = docchi.parse(readFile('fixtures/fixture2.js'));
   let output = doc.output();
 
-  t.equal(output.length, 9, 'docs match up to corresponding nodes');
+  t.equal(output.filter(node => node.context).length,
+    9, 'docs match up to corresponding nodes');
 
   t.equal(output[0].context.name, 'Person', 'class name correct');
   t.equal(output[0].context.type, 'class', 'class is a class');

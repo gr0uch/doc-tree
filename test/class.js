@@ -7,7 +7,8 @@ Test('Class documentation', t => {
   let doc = docchi.parse(readFile('fixtures/fixture1.js'));
   let output = doc.output();
 
-  t.equal(output.length, 12, 'Docs match up to corresponding nodes.');
+  t.equal(output.filter(node => node.context).length,
+    10, 'docs match up to corresponding nodes');
 
   t.equal(output[0].comment.description.match(/<p>/g).length, 2,
     'CommonMark is supported.');

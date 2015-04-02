@@ -7,7 +7,8 @@ Test('Variable assignment', t => {
   let doc = docchi.parse(readFile('fixtures/fixture3.js'));
   let output = doc.output();
 
-  t.equal(output.length, 7, 'Docs match up to corresponding nodes.');
+  t.equal(output.filter(node => node.context).length,
+    7, 'docs match up to corresponding nodes');
 
   t.equal(output[0].context.name, 'anonFn', 'name is correct');
   t.equal(output[0].context.type, 'variable', 'type is correct');
