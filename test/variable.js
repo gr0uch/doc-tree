@@ -12,7 +12,7 @@ Test('Variable assignment', t => {
 
   t.equal(output[0].context.name, 'anonFn', 'name is correct');
   t.equal(output[0].context.type, 'variable', 'type is correct');
-  t.equal(output[0].context.target, undefined, 'no target');
+  t.assert(!output[0].context.target, 'no target');
 
   t.equal(output[1].context.name, 'a', 'name is correct');
   t.equal(output[1].context.type, 'variable', 'type is correct');

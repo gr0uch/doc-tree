@@ -14,8 +14,7 @@ Test('Class documentation', t => {
     'CommonMark is supported.');
   t.equal(output[0].context.type, 'class', 'class is a class');
 
-  t.equal(output[1].context.name, undefined,
-    'name not defined for constructor');
+  t.assert(!output[1].context.name, 'name not defined for constructor');
   t.equal(output[1].context.target, 'Person', 'target is correct');
 
   t.equal(output[2].context.name, 'name', 'name is correct');
@@ -33,27 +32,27 @@ Test('Class documentation', t => {
 
   t.equal(output[6].context.name, 'zap', 'name is correct');
   t.equal(output[6].context.target, 'Person', 'static target is correct');
-  t.equal(output[6].context.static, true, 'static attribute is correct');
+  t.assert(output[6].context.static, 'static attribute is correct');
   t.equal(output[6].context.type, 'method', 'static method is correct');
 
   t.equal(output[7].context.name, 'Nothing', 'name is correct');
   t.equal(output[7].context.type, 'class', 'class is a class');
-  t.equal(output[7].context.target, undefined, 'no target');
+  t.assert(!output[7].context.target, 'no target');
 
   t.equal(output[8].context.name, 'void', 'name is correct');
   t.equal(output[8].context.type, 'method', 'type is correct');
-  t.equal(output[8].context.static, true, 'static attribute is correct');
+  t.assert(output[8].context.static, 'static attribute is correct');
   t.equal(output[8].context.target, 'Nothing', 'target is correct');
 
   t.assert(!output[9].hasOwnProperty('context'), 'comment with no context');
 
-  t.equal(output[10].context.name, undefined, 'name not defined');
+  t.assert(!output[10].context.name, 'name not defined');
   t.equal(output[10].context.type, 'class', 'class is a class');
-  t.equal(output[10].context.target, undefined, 'no target');
+  t.assert(!output[10].context.target, 'no target');
 
   t.equal(output[11].context.name, 'poop', 'name is correct');
   t.equal(output[11].context.type, 'method', 'type is correct');
-  t.equal(output[11].context.target, undefined, 'no target');
+  t.assert(!output[11].context.target, 'no target');
 
   t.end();
 });
