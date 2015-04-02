@@ -1,6 +1,6 @@
 # Changelog
 
-**v0.8.0** (2015-04-02)
+**v0.8.1** (2015-04-02)
 * Re-do CLI.
 * Fix bug with import declaration.
 
