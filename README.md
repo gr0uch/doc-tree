@@ -13,10 +13,10 @@ $ sudo npm install -g docchi
 
 ## Usage
 
-Docchi operates over `stdio`. Running Docchi on its own source code, and outputting the result to `docs.json`:
+Docchi has a CLI. Running Docchi on its own source code, and outputting the result to `docs.json`:
 
 ```sh
-$ docchi < lib/index.js > docs.json
+$ docchi lib/index.js -o docs.json
 ```
 
 Or you could use it programmatically, as part of a Node-based build script:

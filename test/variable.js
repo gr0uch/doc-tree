@@ -1,10 +1,10 @@
 import Test from 'tape';
-import Docchi from '../lib';
+import docchi from '../lib';
 import readFile from './read_file';
 
 
-Test('Class documentation', t => {
-  let doc = Docchi.parse(readFile('fixtures/fixture3.js'));
+Test('Variable assignment', t => {
+  let doc = docchi.parse(readFile('fixtures/fixture3.js'));
   let output = doc.output();
 
   t.equal(output.length, 7, 'Docs match up to corresponding nodes.');

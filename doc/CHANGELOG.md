@@ -1,5 +1,9 @@
 # Changelog
 
+**v0.8.0** (2015-04-02)
+* Re-do CLI.
+* Fix bug with import declaration.
+
 **v0.7.1** (2015-04-01)
 * Add support for variable assignment.
 * Add `parse` method for those who don't like to use `new`.

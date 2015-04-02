@@ -1,3 +1,24 @@
 #!/usr/bin/env node
 
-require('../dist/lib/cli');
+var newLine = '\n';
+var exit = {
+  success: 0,
+  error: 1
+};
+
+require('../dist/lib/cli')()
+  .then(function (output) {
+    if (typeof output === 'string') {
+      process.stdout.write(output + newLine);
+    }
+    process.exit(exit.success);
+  }, function (error) {
+    if (error instanceof Error) {
+      process.stderr.write(error.constructor.name +
+        ': ' + error.message + newLine);
+      process.exit(error.errno || exit.error);
+    } else {
+      process.stderr.write(error + newLine);
+      process.exit(exit.error);
+    }
+  });

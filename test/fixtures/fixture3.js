@@ -1,3 +1,7 @@
+import fs from 'fs';
+import { default as path } from 'path';
+import * as foo from 'foo';
+
 /**
  * Anonymous function assignment.
  */
@@ -14,3 +18,7 @@ var obj = {
   /** Property */ prop: true,
   /** Method */ fn () {}
 };
+
+// Don't explode.
+export let d = 1;
+export { obj as default };

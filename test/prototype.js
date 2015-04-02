@@ -1,10 +1,10 @@
 import Test from 'tape';
-import Docchi from '../lib';
+import docchi from '../lib';
 import readFile from './read_file';
 
 
 Test('Function prototype documentation', t => {
-  let doc = new Docchi(readFile('fixtures/fixture2.js'));
+  let doc = docchi.parse(readFile('fixtures/fixture2.js'));
   let output = doc.output();
 
   t.equal(output.length, 9, 'docs match up to corresponding nodes');
