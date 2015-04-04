@@ -13,8 +13,8 @@ export default class Person extends Object {
    * @param {Number} age the person's age
    */
   constructor (firstName, lastName, age = 0) {
-    [this.firstName, this.lastName, this.age] =
-      [firstName, lastName, age];
+    super();
+    [this.firstName, this.lastName, this.age] = [...arguments];
   }
 
   /**
