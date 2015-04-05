@@ -19,6 +19,11 @@ var obj = {
   /** Method */ fn () {}
 };
 
+/**
+ * Generator.
+ */
+function* bar () {}
+
 // Don't explode.
 export let d = 1;
 export { obj as default };

@@ -8,7 +8,7 @@ Test('Variable assignment', t => {
   let output = doc.output();
 
   t.equal(output.filter(node => node.context).length,
-    7, 'docs match up to corresponding nodes');
+    8, 'docs match up to corresponding nodes');
 
   t.equal(output[0].context.name, 'anonFn', 'name is correct');
   t.equal(output[0].context.type, 'variable', 'type is correct');
@@ -33,6 +33,10 @@ Test('Variable assignment', t => {
   t.equal(output[6].context.name, 'fn', 'name is correct');
   t.equal(output[6].context.type, 'method', 'type is correct');
   t.equal(output[6].context.target, 'obj', 'target is correct');
+
+  t.equal(output[7].context.name, 'bar', 'name is correct');
+  t.equal(output[7].context.type, 'function', 'type is correct');
+  t.equal(output[7].context.generator, true, 'generator is correct');
 
   t.end();
 });
