@@ -1,11 +1,12 @@
 {
   "parser": "babel-eslint",
   "rules": {
-    "strict": 0,
     "curly": 0,
-    "new-cap": 0,
-    "no-use-before-define": 0,
-    "quotes": [1, "single"]
+    "new-cap": [2, {"capIsNew": false}],
+    "no-shadow": 0,
+    "no-use-before-define": [2, "nofunc"],
+    "quotes": [1, "single"],
+    "strict": 0
   },
   "env": {
     "node": true

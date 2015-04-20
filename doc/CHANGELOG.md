@@ -1,5 +1,8 @@
 # Changelog
 
+**v0.8.4** (2015-04-20)
+* Use the shrinkwrap.
+
 **v0.8.3** (2015-04-05)
 * Generator function flag.
 
