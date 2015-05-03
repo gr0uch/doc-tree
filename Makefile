@@ -23,7 +23,7 @@ compile-test:
 	mkdir -p $(DIST_DIR)$(TEST_DIR)
 	$(COMPILE_CMD) --optional runtime $(TEST_DIR) \
 		--out-dir $(DIST_DIR)$(TEST_DIR)
-	cp -rf $(TEST_DIR)fixtures/ $(DIST_DIR)$(TEST_DIR)
+	cp -rf $(TEST_DIR)fixtures $(DIST_DIR)$(TEST_DIR)
 
 clean:
 	rm -rf $(DIST_DIR)

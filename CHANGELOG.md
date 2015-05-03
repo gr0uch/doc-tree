@@ -1,8 +1,11 @@
 # Changelog
 
-**v0.8.4** (2015-05-03)
+**v0.8.5** (2015-05-03)
 * Drop support for Node v0.10.
 * Bump package versions.
+
+**v0.8.4** (2015-04-20)
+* Use the shrinkwrap.
 
 **v0.8.3** (2015-04-05)
 * Generator function flag.
