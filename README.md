@@ -1,4 +1,4 @@
-# Docchi [![Build Status](https://img.shields.io/travis/daliwali/docchi.svg)](https://travis-ci.org/daliwali/docchi)
+# Docchi
 
 [![Build Status](https://img.shields.io/travis/daliwali/docchi/master.svg?style=flat-square)](https://travis-ci.org/daliwali/docchi)
 [![npm Version](https://img.shields.io/npm/v/docchi.svg?style=flat-square)](https://www.npmjs.com/package/docchi)
