@@ -11,8 +11,10 @@ There is no reason for Docchi to exist (besides **working in ES6**). Basically i
 Get it from `npm`:
 
 ```sh
-$ sudo npm install -g docchi
+$ npm install -g docchi
 ```
+
+Note: you may need to run the above command as a superuser (using `sudo`).
 
 
 ## Usage
