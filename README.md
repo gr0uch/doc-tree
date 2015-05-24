@@ -19,23 +19,23 @@ Note: you may need to run the above command as a superuser (using `sudo`).
 
 ## Usage
 
-Docchi has a CLI. Running Docchi on its own source code, and outputting the result to `docs.json`:
+Docchi operates over `stdio`. Running Docchi on its own source code, and outputting the result to `docs.json`:
 
 ```sh
-$ docchi lib/index.js -o docs.json
+$ docchi < lib/index.js > docs.json
 ```
 
 Or you could use it programmatically, as part of a Node-based build script:
 
 ```js
-import fs from 'fs';
-import docchi from 'docchi';
+import fs from 'fs'
+import docchi from 'docchi'
 
 // Parse a string or a buffer.
-let doc = docchi.parse(fs.readFileSync('example.js'));
+let doc = docchi.parse(fs.readFileSync('example.js'))
 
 // An array of parsed comments matched with their contexts.
-let output = doc.output();
+let output = doc.output()
 ```
 
 The `output` method accepts 2 arguments, a function that accepts a comment and returns anything, and an `options` object to pass to the custom function or the built-in parser, Doctrine.

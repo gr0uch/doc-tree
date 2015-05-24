@@ -1,3 +1,3 @@
-import './class';
-import './prototype';
-import './variable';
+import './class'
+import './prototype'
+import './variable'

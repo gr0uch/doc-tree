@@ -13,8 +13,8 @@ export default class Person extends Object {
    * @param {Number} age the person's age
    */
   constructor (firstName, lastName, age = 0) {
-    super();
-    [this.firstName, this.lastName, this.age] = [...arguments];
+    super()
+    [ this.firstName, this.lastName, this.age ] = [ ...arguments ]
   }
 
   /**
@@ -23,7 +23,7 @@ export default class Person extends Object {
    * @return {String}
    */
   get name () {
-    return `${this.firstName} ${this.lastName}`;
+    return `${this.firstName} ${this.lastName}`
   }
 
   /**
@@ -32,7 +32,7 @@ export default class Person extends Object {
    * @param {String} name the person's full name
    */
   set name (name) {
-    [this.firstName, this.lastName] = name.split(' ');
+    [ this.firstName, this.lastName ] = name.split(' ')
   }
 
   /*!
@@ -47,7 +47,7 @@ export default class Person extends Object {
    * This is a method.
    */
   poop () {
-    throw new Error('Diarrhea!');
+    throw new Error('Diarrhea!')
   }
 
   /**
@@ -78,7 +78,7 @@ export class Nothing {
  */
 Object.assign(Person.prototype, {
   alive: true
-});
+})
 
 
 /**
@@ -89,4 +89,4 @@ let Shit = class {
    * Your method won't get a target, because your class is nameless.
    */
   poop () {}
-};
+}

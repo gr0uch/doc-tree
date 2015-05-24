@@ -2,7 +2,7 @@
  * Person constructor.
  */
 export default function Person (firstName, lastName, age = 0) {
-  [this.firstName, this.lastName, this.age] = [...arguments];
+  [ this.firstName, this.lastName, this.age ] = [ ...arguments ]
 }
 
 /**
@@ -14,7 +14,7 @@ Person.prototype = {
    * Poop.
    */
   poop: () => {
-    throw new Error('Diarrhea!');
+    throw new Error('Diarrhea!')
   },
 
   /**
@@ -22,7 +22,7 @@ Person.prototype = {
    */
   foo: 123
 
-};
+}
 
 /**
  * Thing.
@@ -32,21 +32,21 @@ Person.thing = {
    * Foobar!
    */
   value: 'foobar'
-};
+}
 
 /**
  * Die.
  */
 Person.prototype.die = function () {
-  throw new Error('Can\'t die, I\'m immortal.');
-};
+  throw new Error('Can\'t die, I\'m immortal.')
+}
 
 /**
  * Hmm.
  */
-Person.prototype.sex = 'female';
+Person.prototype.sex = 'female'
 
 /**
  * Static property on Person.
  */
-Person.taxonomy = 'homo sapien';
+Person.taxonomy = 'homo sapien'

@@ -1,15 +1,15 @@
-import fs from 'fs';
-import { default as path } from 'path';
-import * as foo from 'foo';
+import fs from 'fs'
+import { default as path } from 'path'
+import * as foo from 'foo'
 
 /**
  * Anonymous function assignment.
  */
-let anonFn = () => {};
+let anonFn = () => {}
 
-/** A */ let a = 1;
-/** B */ var b = 2;
-/** C */ const c = 3;
+/** A */ let a = 1
+/** B */ var b = 2
+/** C */ const c = 3
 
 /**
  * Object.
@@ -17,7 +17,7 @@ let anonFn = () => {};
 var obj = {
   /** Property */ prop: true,
   /** Method */ fn () {}
-};
+}
 
 /**
  * Generator.
@@ -25,5 +25,5 @@ var obj = {
 function* bar () {}
 
 // Don't explode.
-export let d = 1;
-export { obj as default };
+export let d = 1
+export { obj as default }

@@ -1,24 +1,26 @@
 #!/usr/bin/env node
 
-var newLine = '\n';
+/* eslint-disable no-var, no-process-exit */
+
+var newLine = '\n'
 var exit = {
   success: 0,
   error: 1
-};
+}
 
 require('../dist/lib/cli')()
-  .then(function (output) {
-    if (typeof output === 'string') {
-      process.stdout.write(output + newLine);
-    }
-    process.exit(exit.success);
-  }, function (error) {
+  .then(function handleOutput (output) {
+    if (typeof output === 'string')
+      process.stdout.write(output + newLine)
+
+    process.exit(exit.success)
+  }, function handleError (error) {
     if (error instanceof Error) {
-      process.stderr.write(error.constructor.name +
-        ': ' + error.message + newLine);
-      process.exit(error.errno || exit.error);
-    } else {
-      process.stderr.write(error + newLine);
-      process.exit(exit.error);
+      process.stderr.write(error.toString() + newLine)
+      process.exit(error.errno || exit.error)
     }
-  });
+    else {
+      process.stderr.write(error + newLine)
+      process.exit(exit.error)
+    }
+  })
