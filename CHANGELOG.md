@@ -1,5 +1,8 @@
 # Changelog
 
+**v0.9.0** (2015-05-25)
+* Add `stdin` support again.
+
 **v0.8.5** (2015-05-03)
 * Drop support for Node v0.10.
 * Bump package versions.
