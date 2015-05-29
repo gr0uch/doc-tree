@@ -1,5 +1,8 @@
 # Changelog
 
+**v0.10.0** (2015-05-29)
+* Improve support for recursively walking the AST.
+
 **v0.9.0** (2015-05-25)
 * Add `stdin` support again.
 

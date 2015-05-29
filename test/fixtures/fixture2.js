@@ -38,6 +38,12 @@ Person.thing = {
  * Die.
  */
 Person.prototype.die = function () {
+
+  /**
+   * Instance property assignment.
+   */
+  this.foo = 'bar'
+
   throw new Error('Can\'t die, I\'m immortal.')
 }
 

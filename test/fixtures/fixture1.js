@@ -47,6 +47,11 @@ export default class Person extends Object {
    * This is a method.
    */
   poop () {
+    /**
+     * Instance property assignment.
+     */
+    this.foo = 'bar'
+
     throw new Error('Diarrhea!')
   }
 
