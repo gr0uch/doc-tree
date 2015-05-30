@@ -14,7 +14,8 @@ test('Class documentation', t => {
     'CommonMark is supported.')
   t.equal(output[0].context.type, 'class', 'class is a class')
 
-  t.ok(!output[1].context.name, 'name not defined for constructor')
+  t.equal(output[1].context.name, 'constructor', 'name is constructor')
+  t.equal(output[1].context.type, 'constructor', 'type is constructor')
   t.equal(output[1].context.target, 'Person', 'target is correct')
 
   t.equal(output[2].context.name, 'name', 'name is correct')

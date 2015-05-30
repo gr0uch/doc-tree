@@ -1,5 +1,8 @@
 # Changelog
 
+**v0.10.1** (2015-05-30)
+* Add `name` property on class constructor method, even though it is redundant.
+
 **v0.10.0** (2015-05-29)
 * Improve support for recursively walking the AST.
 
