@@ -1,13 +1,16 @@
 {
   "name": "docchi",
   "description": "Documentation generating tool for JavaScript.",
-  "version": "0.10.2",
+  "version": "0.10.3",
   "license": "GPLv3",
-  "author": "Dali Zheng <d@liwa.li> (http://daliwa.li)",
-  "homepage": "https://github.com/daliwali/docchi",
+  "author": {
+    "email": "0x8890@airmail.cc",
+    "url": "http://8890.xxx"
+  },
+  "homepage": "https://github.com/0x8890/docchi",
   "repository": {
     "type": "git",
-    "url": "https://github.com/daliwali/docchi"
+    "url": "https://github.com/0x8890/docchi"
   },
   "main": "dist/lib/index.js",
   "scripts": {
@@ -15,18 +18,18 @@
     "prepublish": "make clean && make compile-lib"
   },
   "dependencies": {
-    "acorn": "^1.2.2",
-    "babel-runtime": "^5.4.7",
-    "commonmark": "^0.19.0",
-    "doctrine": "^0.6.4",
-    "minimist": "^1.1.1",
-    "mkdirp": "^0.5.1"
+    "acorn": "2.0.4",
+    "babel-runtime": "5.6.4",
+    "commonmark": "0.20.0",
+    "doctrine": "0.6.4",
+    "minimist": "1.1.1",
+    "mkdirp": "0.5.1"
   },
   "devDependencies": {
-    "babel": "^5.4.7",
-    "eslint": "^0.21.2",
-    "tap-dot": "^1.0.0",
-    "tape": "^4.0.0"
+    "babel": "5.6.4",
+    "eslint": "0.23.0",
+    "tap-dot": "1.0.0",
+    "tape": "4.0.0"
   },
   "files": [
     "lib/",
