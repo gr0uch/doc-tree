@@ -2,7 +2,7 @@
   "name": "docchi",
   "description": "Documentation generating tool for JavaScript.",
   "version": "0.10.3",
-  "license": "GPLv3",
+  "license": "GPL-3.0",
   "author": {
     "email": "0x8890@airmail.cc",
     "url": "http://8890.xxx"
