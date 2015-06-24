@@ -1,8 +1,8 @@
 # Docchi
 
-[![Build Status](https://img.shields.io/travis/daliwali/docchi/master.svg?style=flat-square)](https://travis-ci.org/daliwali/docchi)
+[![Build Status](https://img.shields.io/travis/0x8890/docchi/master.svg?style=flat-square)](https://travis-ci.org/0x8890/docchi)
 [![npm Version](https://img.shields.io/npm/v/docchi.svg?style=flat-square)](https://www.npmjs.com/package/docchi)
-[![License](https://img.shields.io/npm/l/docchi.svg?style=flat-square)](https://raw.githubusercontent.com/daliwali/docchi/master/LICENSE)
+[![License](https://img.shields.io/npm/l/docchi.svg?style=flat-square)](https://raw.githubusercontent.com/0x8890/docchi/master/LICENSE)
 
 Docchi parses comments in JavaScript code and outputs the structure and context of the comments in any particular format, JSDoc is the default. It traverses the Abstract Syntax Tree (AST) to determine the context of a comment.
 
@@ -84,4 +84,4 @@ There are a lot of AST nodes that it does not match yet. Pull requests welcome.
 
 ## License
 
-Docchi is licensed under the [GNU General Public License v3](https://github.com/daliwali/docchi/blob/master/LICENSE).
+Docchi is licensed under the [GNU General Public License v3](https://github.com/0x8890/docchi/blob/master/LICENSE).
