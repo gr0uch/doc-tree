@@ -1,5 +1,8 @@
 # Changelog
 
+**v0.10.2** (2015-07-16)
+* Bump version and dependencies.
+
 **v0.10.2** (2015-05-30)
 * Add support for custom render function.
 * Add `name` property on class constructor method, even though it is redundant.

@@ -1,7 +1,7 @@
 {
   "name": "docchi",
   "description": "Documentation generating tool for JavaScript.",
-  "version": "0.10.3",
+  "version": "0.10.4",
   "license": "GPL-3.0",
   "author": {
     "email": "0x8890@airmail.cc",
@@ -19,15 +19,15 @@
   },
   "dependencies": {
     "acorn": "2.0.4",
-    "babel-runtime": "5.6.4",
-    "commonmark": "0.20.0",
+    "babel-runtime": "5.7.0",
+    "commonmark": "0.21.0",
     "doctrine": "0.6.4",
     "minimist": "1.1.1",
     "mkdirp": "0.5.1"
   },
   "devDependencies": {
-    "babel": "5.6.4",
-    "eslint": "0.23.0",
+    "babel": "5.6.23",
+    "eslint": "1.0.0-rc-1",
     "tap-dot": "1.0.0",
     "tape": "4.0.0"
   },
