@@ -1,6 +1,6 @@
 # Changelog
 
-**v0.10.2** (2015-07-16)
+**v0.10.5** (2015-07-26)
 * Bump version and dependencies.
 
 **v0.10.2** (2015-05-30)
