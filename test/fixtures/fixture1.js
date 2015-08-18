@@ -77,7 +77,7 @@ export class Nothing {
 }
 
 
-/**
+/*!
  * This sort of prototype assignment won't be detected, need
  * good static analysis to do this. Too complex to handle for now.
  */

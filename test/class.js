@@ -50,15 +50,13 @@ test('Class documentation', t => {
   t.ok(output[9].context.static, 'static attribute is correct')
   t.equal(output[9].context.target, 'Nothing', 'target is correct')
 
-  t.ok(!output[10].context, 'comment with no context')
+  t.ok(!output[10].context.name, 'name not defined')
+  t.equal(output[10].context.type, 'class', 'class is a class')
+  t.ok(!output[10].context.target, 'no target')
 
-  t.ok(!output[11].context.name, 'name not defined')
-  t.equal(output[11].context.type, 'class', 'class is a class')
+  t.equal(output[11].context.name, 'poop', 'name is correct')
+  t.equal(output[11].context.type, 'method', 'type is correct')
   t.ok(!output[11].context.target, 'no target')
-
-  t.equal(output[12].context.name, 'poop', 'name is correct')
-  t.equal(output[12].context.type, 'method', 'type is correct')
-  t.ok(!output[12].context.target, 'no target')
 
   t.end()
 })

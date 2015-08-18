@@ -1,5 +1,8 @@
 # Changelog
 
+**v0.11.0** (2015-08-18)
+* Match identifiers, works for function invocation.
+
 **v0.10.5** (2015-07-26)
 * Bump version and dependencies.
 
