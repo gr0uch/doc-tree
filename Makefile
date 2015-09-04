@@ -1,29 +1,34 @@
 # Commands
-COMPILE_CMD = node_modules/.bin/babel
-LINT_CMD = node_modules/.bin/eslint
+COMPILE = node_modules/.bin/esdown
+LINT = node_modules/.bin/eslint
+MKDIRP = node_modules/.bin/mkdirp
 
 # Directories
-LIB_DIR = lib/
-DIST_DIR = dist/
-TEST_DIR = test/
+LIB = lib/
+DIST = dist/
+TEST = test/
 
 .PHONY: all compile-lib compile-test clean lint
 
 all: compile-lib compile-test
 
 lint:
-	$(LINT_CMD) $(LIB_DIR) $(TEST_DIR)
+	$(LINT) $(LIB) $(TEST)
 
 compile-lib:
-	mkdir -p $(DIST_DIR)$(LIB_DIR)
-	$(COMPILE_CMD) --optional runtime $(LIB_DIR) \
-		--out-dir $(DIST_DIR)$(LIB_DIR)
+	$(MKDIRP) $(DIST)$(LIB)
+	for f in $(LIB)*; do \
+		$(COMPILE) - $$f $(DIST)$$f -r -p; \
+	done
 
 compile-test:
-	mkdir -p $(DIST_DIR)$(TEST_DIR)
-	$(COMPILE_CMD) --optional runtime $(TEST_DIR) \
-		--out-dir $(DIST_DIR)$(TEST_DIR)
-	cp -rf $(TEST_DIR)fixtures $(DIST_DIR)$(TEST_DIR)
+	$(MKDIRP) $(DIST)$(TEST)
+	for f in $(TEST)*; do \
+		if ! [[ -d $$f ]]; then \
+			$(COMPILE) - $$f $(DIST)$$f -r -p; \
+		fi \
+	done
+	cp -rf $(TEST)fixtures $(DIST)$(TEST)
 
 clean:
-	rm -rf $(DIST_DIR)
+	rm -rf $(DIST)

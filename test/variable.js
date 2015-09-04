@@ -1,6 +1,6 @@
 import test from 'tape'
-import docchi from '../lib'
-import readFile from './read_file'
+import docchi from '../lib/index.js'
+import readFile from './read_file.js'
 
 
 test('Variable assignment', t => {

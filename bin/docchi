@@ -2,25 +2,12 @@
 
 /* eslint-disable no-var, no-process-exit */
 
-var newLine = '\n'
-var exit = {
-  success: 0,
-  error: 1
-}
-
 require('../dist/lib/cli')()
-  .then(function handleOutput (output) {
-    if (typeof output === 'string')
-      process.stdout.write(output + newLine)
-
-    process.exit(exit.success)
-  }, function handleError (error) {
-    if (error instanceof Error) {
-      process.stderr.write(error.toString() + newLine)
-      process.exit(error.errno || exit.error)
-    }
-    else {
-      process.stderr.write(error + newLine)
-      process.exit(exit.error)
-    }
-  })
+.then(function handleOutput (output) {
+  if (typeof output === 'string')
+    process.stdout.write(output + '\n')
+  process.exit(0)
+}, function handleError (error) {
+  process.stderr.write(error.toString() + '\n')
+  process.exit(1)
+})

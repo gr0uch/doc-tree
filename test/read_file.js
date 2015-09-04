@@ -1,7 +1,7 @@
-import fs from 'fs'
-import path from 'path'
+import { readFileSync } from 'node:fs'
+import { join } from 'node:path'
 
 
 export default function readFile (fileName) {
-  return fs.readFileSync(path.join(__dirname, fileName))
+  return readFileSync(join(__dirname, fileName))
 }
