@@ -45,7 +45,7 @@
   },
   "preferGlobal": true,
   "engines": {
-    "node": ">=0.12"
+    "iojs": ">=3"
   },
   "keywords": [
     "doc",
