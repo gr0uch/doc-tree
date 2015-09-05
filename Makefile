@@ -1,3 +1,5 @@
+SHELL := /bin/bash
+
 # Commands
 COMPILE = node_modules/.bin/esdown
 LINT = node_modules/.bin/eslint
