@@ -1,7 +1,6 @@
-import { readFileSync } from 'node:fs'
-import { join } from 'node:path'
+const fs = require('fs')
+const path = require('path')
 
-
-export default function readFile (fileName) {
-  return readFileSync(join(__dirname, fileName))
+module.exports = function readFile (fileName) {
+  return fs.readFileSync(path.join(__dirname, fileName))
 }

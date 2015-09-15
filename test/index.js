@@ -1,4 +1,4 @@
-import './class.js'
-import './prototype.js'
-import './variable.js'
-import './function_call.js'
+require('./class')
+require('./prototype')
+require('./variable')
+require('./function_call')

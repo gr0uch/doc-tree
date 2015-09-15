@@ -1,13 +1,13 @@
 #!/usr/bin/env node
 
-/* eslint-disable no-var, no-process-exit */
+/* eslint-disable no-process-exit */
 
-require('../dist/lib/cli')['default']()
-  .then(function handleOutput (output) {
+require('../lib/cli')()
+  .then(output => {
     if (typeof output === 'string')
-      process.stdout.write(output + '\n')
+      process.stdout.write(`${output}\n`)
     process.exit(0)
-  }, function handleError (error) {
-    process.stderr.write(error.toString() + '\n')
+  }, error => {
+    process.stderr.write(`${error.toString()}\n`)
     process.exit(1)
   })

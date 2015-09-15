@@ -1,6 +1,8 @@
-import test from 'tape'
-import docchi from '../lib/index.js'
-import readFile from './read_file.js'
+'use strict'
+
+const test = require('tape')
+const docchi = require('../lib/index')
+const readFile = require('./read_file')
 
 
 test('Variable assignment', t => {
