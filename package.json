@@ -24,7 +24,8 @@
     "mkdirp": "^0.5.1"
   },
   "devDependencies": {
-    "eslint": "^1.10.3",
+    "acorn-es7-plugin": "^1.0.12",
+    "eslint": "^2.5.1",
     "eslint-config-0x8890": "^1.0.1",
     "tap-dot": "^1.0.1",
     "tape": "^4.2.2"

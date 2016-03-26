@@ -6,7 +6,9 @@ const readFile = require('./read_file')
 
 
 test('Class documentation', t => {
-  let doc = docchi.parse(readFile('fixtures/fixture1.js'))
+  require('acorn-es7-plugin')(docchi.acorn)
+  let doc = docchi.parse(readFile('fixtures/fixture1.js'),
+    { ecmaVersion: 7, plugins: { asyncawait: true }})
   let output = doc.output()
 
   t.equal(output.filter(node => node.context).length,
