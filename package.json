@@ -14,7 +14,8 @@
   },
   "main": "lib/index.js",
   "scripts": {
-    "test": "eslint lib test && node test"
+    "test": "eslint lib test && node test",
+    "postpublish": "git tag `npm v docchi version` && git push origin --tags"
   },
   "dependencies": {
     "acorn": "^3.0.4",
