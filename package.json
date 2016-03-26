@@ -1,7 +1,7 @@
 {
   "name": "docchi",
   "description": "Documentation generating tool for JavaScript.",
-  "version": "0.11.4",
+  "version": "0.12.0",
   "license": "GPL-3.0",
   "author": {
     "email": "0x8890@airmail.cc",
@@ -14,21 +14,20 @@
   },
   "main": "lib/index.js",
   "scripts": {
-    "test": "eslint . && node test | tap-dot"
+    "test": "eslint lib test && node test"
   },
   "dependencies": {
-    "acorn": "^2.6.4",
-    "commonmark": "^0.22.1",
-    "doctrine": "^0.7.2",
+    "acorn": "^3.0.4",
+    "commonmark": "^0.25.0",
+    "doctrine": "^1.2.0",
     "minimist": "^1.2.0",
     "mkdirp": "^0.5.1"
   },
   "devDependencies": {
     "acorn-es7-plugin": "^1.0.12",
     "eslint": "^2.5.1",
-    "eslint-config-0x8890": "^1.0.1",
-    "tap-dot": "^1.0.1",
-    "tape": "^4.2.2"
+    "eslint-config-0x8890": "^1.0.2",
+    "tape": "^4.5.1"
   },
   "eslintConfig": {
     "extends": "0x8890",
