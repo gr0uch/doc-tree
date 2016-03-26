@@ -1,5 +1,8 @@
 # Changelog
 
+**v0.12.0** (2016-03-26)
+* Expose internal Acorn.
+
 **v0.11.0** (2015-08-18)
 * Match identifiers, works for function invocation.
 
