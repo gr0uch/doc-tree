@@ -63,6 +63,7 @@ export default class Person extends Object {
    */
   static zap () {}
 
+  async whizz() {}
 }
 
 
