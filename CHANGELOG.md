@@ -1,5 +1,8 @@
 # Changelog
 
+**v0.12.1** (2016-06-04)
+* Polish: update ESLint configuration.
+
 **v0.12.0** (2016-03-26)
 * Expose internal Acorn.
 

@@ -1,7 +1,7 @@
 {
   "name": "docchi",
   "description": "Documentation generating tool for JavaScript.",
-  "version": "0.12.0",
+  "version": "0.12.1",
   "license": "GPL-3.0",
   "author": {
     "email": "0x8890@airmail.cc",
@@ -18,20 +18,20 @@
     "postpublish": "git tag `npm v docchi version` && git push origin --tags"
   },
   "dependencies": {
-    "acorn": "^3.0.4",
-    "commonmark": "^0.25.0",
-    "doctrine": "^1.2.0",
+    "acorn": "^3.1.0",
+    "commonmark": "^0.25.1",
+    "doctrine": "^1.2.2",
     "minimist": "^1.2.0",
     "mkdirp": "^0.5.1"
   },
   "devDependencies": {
-    "acorn-es7-plugin": "^1.0.12",
-    "eslint": "^2.5.1",
-    "eslint-config-0x8890": "^1.0.2",
+    "acorn-es7-plugin": "^1.0.14",
+    "eslint": "^2.11.1",
+    "eslint-config-boss": "^1.0.3",
     "tape": "^4.5.1"
   },
   "eslintConfig": {
-    "extends": "0x8890",
+    "extends": "boss",
     "rules": {
       "strict": 0
     }
