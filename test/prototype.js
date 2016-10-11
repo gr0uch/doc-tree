@@ -1,13 +1,13 @@
 'use strict'
 
 const test = require('tape')
-const docchi = require('../lib/index')
+const docTree = require('../lib/index')
 const readFile = require('./read_file')
 
 
 test('Function prototype documentation', t => {
-  let doc = docchi.parse(readFile('fixtures/fixture2.js'))
-  let output = doc.output()
+  const doc = docTree.parse(readFile('fixtures/fixture2.js'))
+  const output = doc.output()
 
   t.equal(output.filter(node => node.context).length,
     10, 'docs match up to corresponding nodes')

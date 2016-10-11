@@ -1,34 +1,34 @@
-# Docchi
+# doc-tree
 
-[![Build Status](https://img.shields.io/travis/0x8890/docchi/master.svg?style=flat-square)](https://travis-ci.org/0x8890/docchi)
-[![npm Version](https://img.shields.io/npm/v/docchi.svg?style=flat-square)](https://www.npmjs.com/package/docchi)
-[![License](https://img.shields.io/npm/l/docchi.svg?style=flat-square)](https://raw.githubusercontent.com/0x8890/docchi/master/LICENSE)
+[![Build Status](https://img.shields.io/travis/0x8890/doc-tree/master.svg?style=flat-square)](https://travis-ci.org/0x8890/doc-tree)
+[![npm Version](https://img.shields.io/npm/v/doc-tree.svg?style=flat-square)](https://www.npmjs.com/package/doc-tree)
+[![License](https://img.shields.io/npm/l/doc-tree.svg?style=flat-square)](https://raw.githubusercontent.com/0x8890/doc-tree/master/LICENSE)
 
-Docchi parses comments in JavaScript code and outputs the structure and context of the comments in any particular format, JSDoc is the default. It traverses the Abstract Syntax Tree (AST) to determine the context of a comment. Basically it's glue code between the AST parser [Acorn](https://github.com/marijnh/acorn), and the JSDoc parser [Doctrine](https://github.com/Constellation/doctrine).
+`doc-tree` parses comments in JavaScript code and outputs the structure and context of the comments in any particular format, JSDoc is the default. It traverses the Abstract Syntax Tree (AST) to determine the context of a comment. Basically it's glue code between the AST parser [Acorn](https://github.com/marijnh/acorn), and the JSDoc parser [Doctrine](https://github.com/Constellation/doctrine).
 
 Get it from `npm`:
 
 ```sh
-$ npm install -g docchi
+$ npm install -g doc-tree
 ```
 
 
 ## Usage
 
-Docchi operates over `stdio`. Running Docchi on its own source code, and outputting the result to `docs.json`:
+`doc-tree` operates over `stdio`. Running `doc-tree` on its own source code, and outputting the result to `docs.json`:
 
 ```sh
-$ docchi < lib/index.js > docs.json
+$ doc-tree < lib/index.js > docs.json
 ```
 
 Or you could use it programmatically, as part of a Node-based build script:
 
 ```js
 import fs from 'fs'
-import docchi from 'docchi'
+import docTree from 'doc-tree'
 
 // Parse a string or a buffer.
-let doc = docchi.parse(fs.readFileSync('example.js'))
+let doc = docTree.parse(fs.readFileSync('example.js'))
 
 // An array of parsed comments matched with their contexts.
 let output = doc.output()
@@ -75,4 +75,4 @@ The default JSDoc parser will only consider block comments that start with `/**`
 
 ## License
 
-This software is licensed under the [GNU General Public License v3](https://github.com/0x8890/docchi/blob/master/LICENSE).
+This software is licensed under the [GNU General Public License v3](https://github.com/0x8890/doc-tree/blob/master/LICENSE).
