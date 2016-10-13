@@ -2,6 +2,7 @@
 
 **v0.12.2** (2016-10-11)
 * Rename package to `doc-tree`.
+* Update dependencies.
 
 **v0.12.1** (2016-06-04)
 * Polish: update ESLint configuration.
