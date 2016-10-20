@@ -3,14 +3,10 @@
   "description": "Documentation generating tool for JavaScript that matches comments to AST nodes.",
   "version": "0.12.2",
   "license": "GPL-3.0",
-  "author": {
-    "email": "0x8890@airmail.cc",
-    "url": "http://0x8890.com"
-  },
-  "homepage": "https://github.com/0x8890/doc-tree",
+  "homepage": "https://github.com/sapeien/doc-tree",
   "repository": {
     "type": "git",
-    "url": "git@github.com:0x8890/doc-tree.git"
+    "url": "git@github.com:sapeien/doc-tree.git"
   },
   "main": "lib/index.js",
   "scripts": {

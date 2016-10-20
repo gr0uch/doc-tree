@@ -1,8 +1,8 @@
 # doc-tree
 
-[![Build Status](https://img.shields.io/travis/0x8890/doc-tree/master.svg?style=flat-square)](https://travis-ci.org/0x8890/doc-tree)
+[![Build Status](https://img.shields.io/travis/sapeien/doc-tree/master.svg?style=flat-square)](https://travis-ci.org/sapeien/doc-tree)
 [![npm Version](https://img.shields.io/npm/v/doc-tree.svg?style=flat-square)](https://www.npmjs.com/package/doc-tree)
-[![License](https://img.shields.io/npm/l/doc-tree.svg?style=flat-square)](https://raw.githubusercontent.com/0x8890/doc-tree/master/LICENSE)
+[![License](https://img.shields.io/npm/l/doc-tree.svg?style=flat-square)](https://raw.githubusercontent.com/sapeien/doc-tree/master/LICENSE)
 
 `doc-tree` parses comments in JavaScript code and outputs the structure and context of the comments in any particular format, JSDoc is the default but any documentation parsing function can be supplied. It traverses the Abstract Syntax Tree (AST) to determine the context of a comment. Basically it's glue code between the AST parser [Acorn](https://github.com/marijnh/acorn), and the JSDoc parser [Doctrine](https://github.com/Constellation/doctrine).
 
@@ -75,4 +75,4 @@ The default JSDoc parser will only consider block comments that start with `/**`
 
 ## License
 
-This software is licensed under the [GNU General Public License v3](https://github.com/0x8890/doc-tree/blob/master/LICENSE).
+This software is licensed under the [GNU General Public License v3](https://github.com/sapeien/doc-tree/blob/master/LICENSE).
