@@ -4,7 +4,7 @@
 [![npm Version](https://img.shields.io/npm/v/doc-tree.svg?style=flat-square)](https://www.npmjs.com/package/doc-tree)
 [![License](https://img.shields.io/npm/l/doc-tree.svg?style=flat-square)](https://raw.githubusercontent.com/sapeien/doc-tree/master/LICENSE)
 
-`doc-tree` parses comments in JavaScript code and outputs the structure and context of the comments in any particular format, JSDoc is the default but any documentation parsing function can be supplied. It traverses the Abstract Syntax Tree (AST) to determine the context of a comment. Basically it's glue code between the AST parser [Acorn](https://github.com/marijnh/acorn), and the JSDoc parser [Doctrine](https://github.com/Constellation/doctrine).
+`doc-tree` parses comments in JavaScript code and outputs the structure and context of the comments in any particular format, JSDoc is the default but any documentation parsing function can be supplied. It traverses the Abstract Syntax Tree (AST) to determine the context of a comment. Basically it's glue code between the AST parser [Acorn](https://github.com/marijnh/acorn), and the JSDoc parser [Doctrine](https://github.com/Constellation/doctrine), though any user-supplied parsing function may be used.
 
 Get it from `npm`:
 
