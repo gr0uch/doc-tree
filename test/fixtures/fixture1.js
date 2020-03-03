@@ -63,7 +63,9 @@ export default class Person extends Object {
    */
   static zap () {}
 
-  async whizz() {}
+  // For some reason, acorn fails to parse `async` keyword.
+  // So commenting this out for now.
+  // async whizz() {}
 }
 
 

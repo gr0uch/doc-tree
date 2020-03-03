@@ -6,9 +6,7 @@ const readFile = require('./read_file')
 
 
 test('Class documentation', t => {
-  require('acorn-es7-plugin')(docTree.acorn)
-  const doc = docTree.parse(readFile('fixtures/fixture1.js'),
-    { ecmaVersion: 7, plugins: { asyncawait: { awaitAnywhere: true } } })
+  const doc = docTree.parse(readFile('fixtures/fixture1.js'))
   const output = doc.output()
 
   t.equal(output.filter(node => node.context).length,
