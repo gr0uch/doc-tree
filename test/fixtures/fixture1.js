@@ -14,6 +14,7 @@ export default class Person extends Object {
    */
   constructor (firstName, lastName, age = 0) {
     super()
+    this.hair = undefined;
     [ this.firstName, this.lastName, this.age ] = [ ...arguments ]
   }
 
@@ -41,7 +42,15 @@ export default class Person extends Object {
   // This should also be ignored.
   // Ignore this line too.
   // Nothing here.
-  ignore () {}
+  ignore () {
+    // Making sure parser understands stuff
+    const about = {
+      firstName: this.firstName ?? '<Jane/John>',
+      lastName: this.lastName ?? '<Doe>',
+      age: this.age ?? '<SMH>',
+      hairStyle: this.hair?.style ?? '<Uhh>',
+    };
+  }
 
   /**
    * This is a method.
