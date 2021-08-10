@@ -50,6 +50,7 @@ export default class Person extends Object {
       age: this.age ?? '<SMH>',
       hairStyle: this.hair?.style ?? '<Uhh>',
     };
+    const aboutCopy = { ...about };
   }
 
   /**
@@ -105,5 +106,10 @@ let Shit = class {
   /**
    * Your method won't get a target, because your class is nameless.
    */
-  poop () {}
+  poop () {
+    /**
+     * Instance property assignment with spread op.
+     */
+    this.smoothOperator = { ...undefined };
+  }
 }

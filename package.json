@@ -1,7 +1,7 @@
 {
   "name": "doc-tree",
   "description": "Documentation generating tool for JavaScript that matches comments to AST nodes.",
-  "version": "0.13.0",
+  "version": "0.14.0",
   "license": "GPL-3.0",
   "homepage": "https://github.com/sapeien/doc-tree",
   "repository": {

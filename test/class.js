@@ -10,7 +10,7 @@ test('Class documentation', t => {
   const output = doc.output()
 
   t.equal(output.filter(node => node.context).length,
-    11, 'docs match up to corresponding nodes')
+    12, 'docs match up to corresponding nodes')
 
   t.equal(output[0].comment.description.match(/<p>/g).length, 2,
     'CommonMark is supported.')
@@ -59,6 +59,10 @@ test('Class documentation', t => {
   t.equal(output[11].context.name, 'poop', 'name is correct')
   t.equal(output[11].context.type, 'method', 'type is correct')
   t.ok(!output[11].context.target, 'no target')
+
+  t.equal(output[12].context.name, 'smoothOperator', 'name is correct')
+  t.equal(output[12].context.type, 'property', 'type is correct')
+  t.equal(output[12].context.target, 'this', 'target is correct')
 
   t.end()
 })

@@ -24,6 +24,14 @@ var obj = {
  */
 function* bar () {}
 
+/**
+ * Spread Object
+ */
+var spreadObj = {
+  /** Spreading Object */ ...obj,
+  /** Property 2 */ prop1: 'prop1'
+};
+
 // Don't explode.
 export let d = 1
 export { obj as default }
